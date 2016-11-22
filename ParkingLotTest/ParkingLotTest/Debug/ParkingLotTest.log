@@ -1,0 +1,7 @@
+﻿  ParkingLotTest.cpp
+d:\c++ projects\parkinglottest\parkinglottest\level.h(42): warning C4018: “<”: 有符号/无符号不匹配
+d:\c++ projects\parkinglottest\parkinglottest\level.h(62): warning C4018: “<”: 有符号/无符号不匹配
+d:\c++ projects\parkinglottest\parkinglottest\parkinglot.h(26): warning C4018: “<”: 有符号/无符号不匹配
+d:\c++ projects\parkinglottest\parkinglottest\parkinglot.h(35): warning C4018: “<”: 有符号/无符号不匹配
+  ParkingLotTest.vcxproj -> D:\c++ projects\ParkingLotTest\Debug\ParkingLotTest.exe
+  ParkingLotTest.vcxproj -> D:\c++ projects\ParkingLotTest\Debug\ParkingLotTest.pdb (Full PDB)
