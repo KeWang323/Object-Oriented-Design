@@ -2,13 +2,13 @@
 //
 #include "stdafx.h"
 #include <iostream>
-#include <utility>
 #include"Box.h"
+#include"CandyBox.h"
+#include"Can.h"
 #include"BoxOperators.h"
 //#include"CCandyBox.h"
 
 using namespace std;
-using namespace std::rel_ops;
 
 int CBox::boxCnt = 0;
 
@@ -22,6 +22,11 @@ int main() {
 	Box5 = &Box3;            //redefine pointer
 	CBox Box4[6];            //array of objects
 	CBox Box7 = Box3 * 2;
+	CCandyBox myMintBox(5,5,5,"Wafer Thin Mints");
+	cout << myMintBox.getVolume() << endl;
+	CCandyBox myMintBox2(myMintBox);
+	CCan can(5, 10);
+	//CCandyBox myBox(myMintBox);
 	//CBox Box7(-1, 0, 0);
 	//call functions members
 	cout << Box1.showVolume() << endl;    //instance
@@ -29,19 +34,24 @@ int main() {
 	cout << getBoxSurface(Box1) << endl;  //instance
 	cout << Box4[0].showVolume() << endl; //instance
 	cout << Box5->showVolume() << endl;   //pointer
+	cout << myMintBox.showVolume() << endl;
 	cout << "Compare:" << Box1.compare(Box3) << endl;
 	Box1.showBox();
 	Box3.showBox();
 	Box7.showBox();
-	cout << Box7 / Box3 << endl;
-	cout << Box7 % Box3 << endl;
+	cout << myMintBox.getVolume() << endl;
+	cout << can.showVolume() << endl;
 	//static field
 	Box1.increCnt();
 	cout << CBox::boxCnt << endl;
 	//size of object
 	cout << "Box occupies " << sizeof(Box1) << " bytes" << endl;
 	cout << "The array of Box occupies " << sizeof(Box4) << " bytes" << endl;
+	cout << "The array of CandyBox occupies " << sizeof(myMintBox) << " bytes" << endl;
 	//Operator overloading
+	cout << Box7 / Box3 << endl;
+	cout << Box7 % Box3 << endl;
+	cout << endl;
 	cout << (Box1 < Box3) << endl;
 	cout << (Box1 > Box3) << endl;
 	cout << (Box1 == Box3) << endl;
@@ -60,8 +70,7 @@ int main() {
 	cout << (9 > Box1) << endl;
 	cout << (9 == Box1) << endl;
 	cout << (9 != Box1) << endl;
-	//CCandyBox myMintBox(3.0, 4.0, 5.0, "Wafer Thin Mints");
-	//CCandyBox myBox(myMintBox);
+
 
 	//cout << myMintBox.ShowVolume() << endl;
 
