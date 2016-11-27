@@ -26,9 +26,13 @@ int main() {
 	cout << myMintBox.getVolume() << endl;
 	CCandyBox myMintBox2(myMintBox);
 	CCan can(5, 10);
+	CContainer *Box8 = new CBox(3, 3, 3);
+	CBox *Box9 = dynamic_cast<CBox*>(Box8);
 	//CCandyBox myBox(myMintBox);
 	//CBox Box7(-1, 0, 0);
 	//call functions members
+	cout << Box8->showVolume() << endl;
+	cout << Box9->getLength() << endl;
 	cout << Box1.showVolume() << endl;    //instance
 	cout << Box3.showVolume() << endl;    //instance
 	cout << getBoxSurface(Box1) << endl;  //instance

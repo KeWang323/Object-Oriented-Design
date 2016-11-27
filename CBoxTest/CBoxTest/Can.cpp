@@ -4,6 +4,7 @@
 
 CCan::CCan(double hv, double dv)
 {
+	cout << "CCan constructor 1 called" << endl;
 	m_Height = hv;
 	m_Diameter = dv;
 }
