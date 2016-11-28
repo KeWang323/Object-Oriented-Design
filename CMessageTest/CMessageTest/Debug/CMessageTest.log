@@ -1,0 +1,4 @@
+﻿  CMessageTest.cpp
+d:\c++ projects\cmessagetest\cmessagetest\cmessage.h(34): warning C4715: “CMessage::operator=”: 不是所有的控件路径都返回值
+  CMessageTest.vcxproj -> D:\c++ projects\CMessageTest\Debug\CMessageTest.exe
+  CMessageTest.vcxproj -> D:\c++ projects\CMessageTest\Debug\CMessageTest.pdb (Full PDB)
