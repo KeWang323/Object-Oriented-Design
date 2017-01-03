@@ -1,3 +1,6 @@
-﻿  BuilderPattern.cpp
-  BuilderPattern.vcxproj -> D:\c++ projects\BuilderPattern\Debug\BuilderPattern.exe
-  BuilderPattern.vcxproj -> D:\c++ projects\BuilderPattern\Debug\BuilderPattern.pdb (Full PDB)
+﻿  stdafx.cpp
+  Person.cpp
+  BuilderPattern.cpp
+  正在生成代码...
+  BuilderPattern.vcxproj -> D:\GitHub\Object-Oriented-Design\BuilderPattern\Debug\BuilderPattern.exe
+  BuilderPattern.vcxproj -> D:\GitHub\Object-Oriented-Design\BuilderPattern\Debug\BuilderPattern.pdb (Full PDB)

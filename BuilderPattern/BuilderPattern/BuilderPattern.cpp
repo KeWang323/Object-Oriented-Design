@@ -7,18 +7,14 @@
 
 using namespace std;
 
-string CPerson::FirstName = "";
-string CPerson::LastName = "";
-string CPerson::CPersonBuilder::FirstName = "";
-string CPerson::CPersonBuilder::LastName = "";
-
 int main()
 {
-	//CPerson *a = (new CPerson::CPersonBuilder("aa", "bb"))->age(18)->build();
-	CPerson *a = CPerson::CPersonBuilder("aa", "bb").age(18)->build();
+	CPerson *a = (new CPerson::CPersonBuilder("John", "Smith"))->age(17)->phone("123456")->build();
+	a->show();
+	CPerson *b = CPerson::CPersonBuilder("Kate", "Marry").age(18)->address()->build();
+	b->show();
+	a->show();
 
-	cout << a->getFirstName() << endl;
-	cout << a->getAge() << endl;
 	return 0;
 }
 
