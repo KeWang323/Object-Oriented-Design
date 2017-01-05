@@ -26,11 +26,11 @@ public:
 	}
 };
 
-Singleton* Singleton::S;
+Singleton* Singleton::S = NULL;
 
 int main()
 {
-	cout << Singleton::getSingleton()->i << endl;
+	cout << Singleton::getSingleton(10)->i << endl;
     return 0;
 }
 
